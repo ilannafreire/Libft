@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ifreire <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: ifreire <ifreire@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/27 18:40:49 by ifreire           #+#    #+#             */
-/*   Updated: 2026/06/03 01:55:13 by ifreire          ###   ########.fr       */
+/*   Updated: 2026/06/04 18:01:39 by ifreire          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,15 +20,3 @@ int	ft_tolower(int c)
 	}
 	return (c);
 }
-
-/*
-int	main(void)
-{
-	char	c;
-
-	c = ft_tolower('A');
-	write(1, &c, 1);
-	write(1, "\n", 1);
-	return (0);
-}
-*/
