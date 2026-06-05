@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ifreire <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: ifreire <ifreire@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/27 19:37:35 by ifreire           #+#    #+#             */
-/*   Updated: 2026/05/27 21:09:25 by ifreire          ###   ########.fr       */
+/*   Updated: 2026/06/05 13:04:52 by ifreire          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,21 +15,19 @@
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	i;
-	size_t	len_dst;
-	size_t	len_src;
+	size_t	dst_len;
+	size_t	src_len;
 
+	dst_len = ft_strlen(dst);
+	src_len = ft_strlen(src);
+	if (size <= dst_len)
+		return (src_len + size);
 	i = 0;
-	if (size == 0)
-		return (ft_strlen(src));
-	len_dst = ft_strlen(dst);
-	len_src = ft_strlen(src);
-	if (size <= len_dst)
-		return (len_src + size);
-	while (src[i] != '\0' && (len_dst + i) < (size - 1))
+	while ((dst_len + i) < (size - 1) && src[i] != '\0')
 	{
-		dst[i + len_dst] = src[i];
+		dst[dst_len + i] = src[i];
 		i++;
 	}
-	dst[i + len_dst] = '\0';
-	return (len_src + len_dst);
+	dst[dst_len + i] = '\0';
+	return (dst_len + src_len);
 }
