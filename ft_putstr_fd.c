@@ -6,7 +6,17 @@
 /*   By: ifreire <ifreire@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/08 07:41:18 by ifreire           #+#    #+#             */
-/*   Updated: 2026/06/08 07:41:19 by ifreire          ###   ########.fr       */
+/*   Updated: 2026/06/08 08:00:11 by ifreire          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+void	ft_putstr_fd(char *s, int fd)
+{
+	while (*s)
+	{
+		ft_putchar_fd(*s, fd);
+		s++;
+	}
+}

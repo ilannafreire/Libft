@@ -1,30 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   lsadd_back.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ifreire <ifreire@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/08 08:00:00 by ifreire           #+#    #+#             */
-/*   Updated: 2026/06/08 08:00:16 by ifreire          ###   ########.fr       */
+/*   Created: 2026/06/08 08:03:01 by ifreire           #+#    #+#             */
+/*   Updated: 2026/06/08 08:38:23 by ifreire          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+void	ft_lsadd_back(t_list **lst, t_list *new)
 {
-	long int	nb;
+	t_list *last;
 
-	nb = n;
-	if (nb < 0)
+	if (!lst || !new)
+		return;
+	if (*lst == NULL)
 	{
-		nb *= -1;
-		ft_putchar_fd('-', fd);
-	}
-	if (nb >= 10)
-	{
-		ft_putnbr_fd(nb / 10, fd);
-	}
-	ft_putchar_fd((nb % 10) + 48, fd);
+		*lst = new;
+		return ;
+}
 }
