@@ -6,11 +6,9 @@
 /*   By: ifreire <ifreire@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/04 13:29:23 by ifreire           #+#    #+#             */
-/*   Updated: 2026/06/05 13:31:35 by ifreire          ###   ########.fr       */
+/*   Updated: 2026/06/08 19:55:25 by ifreire          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

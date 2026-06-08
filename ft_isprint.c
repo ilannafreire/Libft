@@ -6,11 +6,9 @@
 /*   By: ifreire <ifreire@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/27 16:06:15 by ifreire           #+#    #+#             */
-/*   Updated: 2026/06/06 00:58:32 by ifreire          ###   ########.fr       */
+/*   Updated: 2026/06/08 19:51:40 by ifreire          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isprint(int c)
 {

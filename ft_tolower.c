@@ -6,11 +6,9 @@
 /*   By: ifreire <ifreire@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/27 18:40:49 by ifreire           #+#    #+#             */
-/*   Updated: 2026/06/04 18:01:39 by ifreire          ###   ########.fr       */
+/*   Updated: 2026/06/08 19:52:06 by ifreire          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_tolower(int c)
 {
