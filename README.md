@@ -1,4 +1,4 @@
-*This project has been created as part of the 42 curriculum by ifreire*
+*This project has been created as part of the 42 curriculum by ifreire.*
 
 # Libft
 
@@ -84,7 +84,7 @@ typedef struct s_list
 }   t_list;
 ```
 
-Linked list API:
+Linked list:
 
 - Node creation and insertion:
 	`ft_lstnew`, `ft_lstadd_front`, `ft_lstadd_back`
