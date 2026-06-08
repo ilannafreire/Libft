@@ -6,7 +6,7 @@
 /*   By: ifreire <ifreire@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/27 19:37:35 by ifreire           #+#    #+#             */
-/*   Updated: 2026/06/05 13:04:52 by ifreire          ###   ########.fr       */
+/*   Updated: 2026/06/08 07:20:56 by ifreire          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,22 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t	i;
-	size_t	dst_len;
-	size_t	src_len;
+	size_t				s_src;
+	size_t				s_dst;
+	size_t				index;
 
-	dst_len = ft_strlen(dst);
-	src_len = ft_strlen(src);
-	if (size <= dst_len)
-		return (src_len + size);
-	i = 0;
-	while ((dst_len + i) < (size - 1) && src[i] != '\0')
+	s_src = ft_strlen(src);
+	s_dst = 0;
+	while (s_dst < size && dst[s_dst])
+		s_dst++;
+	index = 0;
+	if (s_dst == size)
+		return (size + s_src);
+	while (src[index] && (s_dst + index) < size - 1)
 	{
-		dst[dst_len + i] = src[i];
-		i++;
+		dst[index + s_dst] = src[index];
+		index++;
 	}
-	dst[dst_len + i] = '\0';
-	return (dst_len + src_len);
+	dst[index + s_dst] = 0;
+	return (s_dst + s_src);
 }

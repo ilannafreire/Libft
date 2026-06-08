@@ -6,7 +6,7 @@
 /*   By: ifreire <ifreire@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/05 16:33:22 by ifreire           #+#    #+#             */
-/*   Updated: 2026/06/05 17:18:25 by ifreire          ###   ########.fr       */
+/*   Updated: 2026/06/08 07:34:31 by ifreire          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,22 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char	*new_str;
-	size_t	i;
-	size_t	j;
+	char		*ptr;
+	size_t		index;
 
-	if (!s || !(new_str = (char *)malloc(len + 1)))
+	index = 0;
+	if (start >= ft_strlen(s))
+		return (ft_strdup(""));
+	if (len > ft_strlen(s + start))
+		len = ft_strlen(s + start);
+	ptr = malloc(len + 1);
+	if (!ptr)
 		return (0);
-	i = start;
-	j = 0;
-	while (i < ft_strlen(s) && j < len)
-		new_str[j++] = s[i++];
-	new_str[j] = '\0';
-	return (new_str);
+	while (index < len)
+	{
+		ptr[index] = s [start + index];
+		index++;
+	}
+	ptr[index] = 0;
+	return (ptr);
 }
