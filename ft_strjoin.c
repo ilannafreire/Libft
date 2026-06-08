@@ -6,7 +6,7 @@
 /*   By: ifreire <ifreire@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/05 16:30:15 by ifreire           #+#    #+#             */
-/*   Updated: 2026/06/08 07:33:21 by ifreire          ###   ########.fr       */
+/*   Updated: 2026/06/08 10:31:24 by ifreire          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,4 +40,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ptr[i + j] = 0;
 	return (ptr);
 }
-

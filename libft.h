@@ -6,7 +6,7 @@
 /*   By: ifreire <ifreire@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/23 19:37:30 by ifreire           #+#    #+#             */
-/*   Updated: 2026/06/08 08:12:34 by ifreire          ###   ########.fr       */
+/*   Updated: 2026/06/08 11:14:53 by ifreire          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
-// Funções de lista (bonus)
+// Funções de lista
 t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 int		ft_lstsize(t_list *lst);

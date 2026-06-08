@@ -6,7 +6,7 @@
 /*   By: ifreire <ifreire@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/08 07:24:16 by ifreire           #+#    #+#             */
-/*   Updated: 2026/06/08 08:44:38 by ifreire          ###   ########.fr       */
+/*   Updated: 2026/06/08 10:32:12 by ifreire          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,4 +19,3 @@ void	ft_putendl_fd(char *s, int fd)
 	ft_putstr_fd(s, fd);
 	ft_putchar_fd('\n', fd);
 }
-	
