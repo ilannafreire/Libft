@@ -6,13 +6,13 @@
 /*   By: ifreire <ifreire@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/08 07:35:52 by ifreire           #+#    #+#             */
-/*   Updated: 2026/06/08 07:35:55 by ifreire          ###   ########.fr       */
+/*   Updated: 2026/06/09 19:15:57 by ifreire          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isset(char c, char const *set)
+static int	ft_isset(char c, char const *set)
 {
 	size_t	i;
 

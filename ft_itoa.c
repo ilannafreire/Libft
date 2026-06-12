@@ -6,13 +6,13 @@
 /*   By: ifreire <ifreire@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/08 07:42:39 by ifreire           #+#    #+#             */
-/*   Updated: 2026/06/08 07:43:10 by ifreire          ###   ########.fr       */
+/*   Updated: 2026/06/09 19:12:46 by ifreire          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_intlen(long int nb)
+static size_t	ft_intlen(long int nb)
 {
 	size_t	len;
 
@@ -27,7 +27,7 @@ size_t	ft_intlen(long int nb)
 	return (len);
 }
 
-char	*ft_negative(long int n)
+static char	*ft_negative(long int n)
 {
 	size_t		len;
 	long int	index;
